@@ -17,6 +17,8 @@
 
 </head>
 <body>
+
+
 <section class="all-page">
 
     <div class= "page-list">
@@ -25,41 +27,40 @@
                 <p>Hello World</p>
             </div>
             <div class="block-intro">
-                <a href="#blockNav"></a>
+                <a href="#itemIntro"></a>
             </div>
         </div>
 
-
-        <div class="page-item-intro">
-            <div class="block-nav" id="blockNav">
-                <div class="nav-container">
-                    <a href="">Chung_Shu</a>
-                    <div class="nav">
-                        <a href="">个人简历</a>
-                        <a href="">专业技能</a>
-                        <a href="">工作经历</a>
-                        <a href="">项目经验</a>
-                        <a href="">联系邮箱</a>
-                    </div>
-                    <button class="collapse">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+        <div class="block-nav" id="blockNav">
+            <div class="nav-container">
+                <a href="" id="logo">Chung_Shu</a>
+                <div class="nav">
+                    <a href="#introContent">个人简历</a>
+                    <a href="#itemSkill">专业技能</a>
+                    <a href="#itemWorking">工作经历</a>
+                    <a href="#itemProject">项目经验</a>
+                    <a href="#itemMail">联系邮箱</a>
                 </div>
+                <button class="collapse">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
+        </div>
+        <div class="page-item-intro" id="itemIntro">
 
-            <div class="page-bg-intro">
-                <div class="icon-img"> <a href=""></a></div>
-                <div class="icon-img"> <a href=""></a></div>
+            <div class="page-bg-intro" id="introContent">
+                <!--<div class="icon-img"> <a href=""></a></div>-->
+                <!--<div class="icon-img"> <a href=""></a></div>-->
 
                 <div class="intro-photo">
                     <a href="" class="person">
                         <img src="./image/zs.png" alt=""/>
                     </a>
                 </div>
-                <div class="icon-img"> <a href=""></a></div>
-                <div class="icon-img"> <a href=""></a></div>
+                <!--<div class="icon-img"> <a href=""></a></div>-->
+                <!--<div class="icon-img"> <a href=""></a></div>-->
             </div>
 
             <div class="page-intro-content">
@@ -80,9 +81,10 @@
             </div>
         </div>
 
-        <div class="page-item-skill">
+        <div class="page-item-skill" id="itemSkill">
             <div class="skill-title">
                 <h2>专业技能</h2>
+
             </div>
 
             <div class="skill">
@@ -114,7 +116,7 @@
             </div>
         </div>
 
-        <div class="page-item-working">
+        <div class="page-item-working" id="itemWorking">
             <div class="work-title">
                 <h2>工作经历</h2>
             </div>
@@ -136,7 +138,7 @@
             </div>
         </div>
 
-        <div class="page-item-project">
+        <div class="page-item-project" id="itemProject">
             <div class="projects-title">
                 <h2>项目经验</h2>
             </div>
@@ -145,27 +147,29 @@
                     <div class="project-img">
                         <img src="" alt="img"/>
                     </div>
-                    <h2>帮我选</h2>
-                    <p>一个帮助选择困难症人群选择吃什么的网站。项目为独立开发项目。</p>
+                    <h2>百田森商城</h2>
+                    <p>本项目是一个女鞋时尚品牌的电商网站，以微信公众号作为入口的移动端微商城，商城的特色功能是鞋码匹配，可在附件门店进行脚型测试，结合公司的3维脚型测量仪提供的脚型数据，为客户购买鞋子提供更专业的参考标准，合适的才是最好的。</p>
                 </div>
                 <div class="projects-item">
                     <div class="project-img">
                         <img src="" alt=""/>
                     </div>
-                    <h2>帮我选</h2>
-                    <p>一个帮助选择困难症人群选择吃什么的网站。项目为独立开发项目。</p>
+                    <h2>唯爱之履商城</h2>
+                    <p>
+                        本项目是一个定制鞋类的垂直电商网站，以微信公众号作为入口的移动端微商城，商城的特色功能是鞋码匹配，结合公司的3维脚型测量仪提供的脚型数据，为用户定制做鞋提供尺码数据匹配服务。</p>
                 </div>
                 <div class="projects-item">
                     <div class="project-img">
                         <img src="" alt=""/>
                     </div>
-                    <h2>帮我选</h2>
-                    <p>一个帮助选择困难症人群选择吃什么的网站。项目为独立开发项目。</p>
+                    <h2>云智数据官方网站</h2>
+                    <p>
+                        根据产品和UI的设计，开发公司的官方网站，主要响应式开发，优化页面响应速度，解决浏览器兼容问题，更好的做到用户体验</p>
                 </div>
             </div>
         </div>
 
-        <div class="page-item-mail">
+        <div class="page-item-mail" id="itemMail">
             <div>
                 <h2>快到我的碗里来吧</h2>
                 <p>120883085@qq.com</p>
@@ -178,8 +182,8 @@
 
 </section>
 
-    <script src="./js/jquery-3.1.0.min.js"></script>
-    <script src="./js/swiper.jquery.min.js"></script>
-    <script src="./js/index.js"></script>
+<script src="./lib/jquery-3.1.0.min.js"></script>
+<script src="./js/swiper.jquery.min.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
