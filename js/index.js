@@ -3,9 +3,7 @@
  */
 
 $(function(){
-    $(".nav a").click(function () {
-      $(".skill-title").fadeToggle();
-    })
+
 
     $('.nav a').bind('click',function(event){
         var $anchor = $(this);
@@ -13,9 +11,20 @@ $(function(){
         event.preventDefault();
     });
     $('.collapse').bind('click',function(event){
-        alert('a');
         $('.nav').addClass("collapse-active");
     });
+    var children = $(".page-list").children("div");
+
+    for(var i = 0; i < children.length; i++ ){
+        if(children[i].className != "block-nav"){
+            $(children[i]).css('height',$(window).height());
+            console.log($(children[i]).css('height'));
+        }
+
+    }
+
 });
 //平滑滚动导航
+
+
 
