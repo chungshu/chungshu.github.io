@@ -3,9 +3,6 @@
  */
 
 $(function(){
-    $(".nav a").click(function () {
-      $(".skill-title").fadeToggle();
-    })
 
     $('.nav a').bind('click',function(event){
         var $anchor = $(this);
