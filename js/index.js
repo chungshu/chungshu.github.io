@@ -3,7 +3,10 @@
  */
 
 $(function(){
+<<<<<<< HEAD
 
+=======
+>>>>>>> 596d22b4bde5059babcf2f9edd8cfa0e23cd69b8
 
     $('.nav a').bind('click',function(event){
         var $anchor = $(this);

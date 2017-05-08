@@ -47,7 +47,7 @@ html {
 .block-intro {
     position: absolute;
     left: 50%;
-    top: 12%;
+    top: 9%;
     width: 2rem;
     height: 2rem;
     margin-left: -1.5rem;
@@ -84,6 +84,7 @@ html {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .nav-container a {
     padding: 0 25px;
@@ -95,6 +96,7 @@ html {
 .nav {
     float: right;
     /*background-color: #ffb753;*/
+    width: 60vw;
     z-index: 6;
 }
 .collapse {
@@ -121,11 +123,16 @@ html {
 }
 @media screen and (max-width: 678px) {
 
-    .nav {
-        display: none;
+    .nav a{
+        display: inline;
+        /*width: 80vw;*/
+        line-height: 28px;
+        font-size: 0.5rem;
+        color: #ffffff;
+        padding: 0 10px;
     }
     .collapse{
-        display: block;
+        /*display: block;*/
     }
 }
 .collapse-active a{
@@ -135,6 +142,10 @@ html {
     display: inline-block;
     color: #c2c2c2;
     border-bottom: 1px dotted #929292;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    background-color: rgba(118, 118, 118, 0.5);
 
 }
 
