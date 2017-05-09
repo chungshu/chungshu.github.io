@@ -475,6 +475,13 @@ html {
     border: 2px solid #fff;
     /*background-color: #ff3f87;*/
 }
+
+.project-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50% 50%;
+}
 .projects-item h2 {
     height: 4rem;
     line-height: 4rem;
