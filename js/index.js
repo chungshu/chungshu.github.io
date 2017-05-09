@@ -8,18 +8,15 @@ $(function(){
         $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top-52}, 600);
         event.preventDefault();
     });
-    $('.collapse').bind('click',function(event){
-        $('.nav').addClass("collapse-active");
-    });
     var children = $(".page-list").children("div");
-
-    for(var i = 0; i < children.length; i++ ){
-        if(children[i].className != "block-nav"){
-            $(children[i]).css('height',$(window).height());
-            console.log($(children[i]).css('height'));
-        }
-
-    }
+    $(children).css('height',$(window).height());
+//    for(var i = 0; i < children.length; i++ ){
+//        if(children[i].className != "block-nav"){
+//
+//            console.log($(children[i]).css('height'));
+//        }
+//
+//    }
 
 });
 //平滑滚动导航
